@@ -1,5 +1,6 @@
 package com.ne.starter.utils;
 
+import com.ne.starter.dtos.response.ApiResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
