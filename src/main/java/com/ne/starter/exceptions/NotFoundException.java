@@ -1,6 +1,8 @@
 package com.ne.starter.exceptions;
 
+import com.ne.starter.dtos.response.ErrorResponse;
 import com.ne.starter.dtos.response.Response;
+import com.ne.starter.enums.ResponseType;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 

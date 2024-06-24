@@ -1,6 +1,7 @@
 package com.ne.starter.utils;
 
 import com.ne.starter.dtos.response.ApiResponse;
+import com.ne.starter.exceptions.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
@@ -29,6 +30,7 @@ public class ExceptionUtils {
                     e.getMessage()
             ), HttpStatus.INTERNAL_SERVER_ERROR);
         } else if(e instanceof BadRequestAlertException){
+            System.out.println("Here I reached=======");
             return new ResponseEntity<>(new ApiResponse(
                     false,
                     e.getMessage()

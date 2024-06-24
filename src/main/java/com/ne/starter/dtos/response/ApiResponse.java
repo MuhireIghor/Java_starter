@@ -4,8 +4,8 @@ import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
 public class ApiResponse {
-    private String message;
     private Boolean success;
+    private String message;
     private Object data;
 
     public ApiResponse(Boolean success, String message) {
